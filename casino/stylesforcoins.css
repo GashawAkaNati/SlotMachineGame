@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: burlywood;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: blue;
+    --border-bottom: solid 10px gold;
+    --border-left-right: solid 30px gold;
+    --border-outliner: solid 15px grey;
+    --border-inner-left-right: solid 10px white;
+}
+
+.outer {
+    width: 800px;
+    height: 300px;
+    background: inherit;
+    margin: 150px auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.left {
+    flex-basis: 50px;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: var(--border-left-right);
+    border-bottom: none;
+    background: gold;
+}
+
+.left-outliner {
+    flex-basis: 50px;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    border-right: none;
+    border-left: var(--border-outliner);
+    margin-left: -60px;
+    border-bottom: none;
+    border-top: none;
+    background-color: grey;
+}
+
+.center {
+    flex: 1;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: -30px;
+    border-top: var(--border-bottom);
+    border-bottom: var(--border-bottom);
+}
+
+.forleft {
+    flex-basis: 50px;
+    border-left: var(--border-inner-left-right);
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    margin-left: -27px;
+    border-right: none;
+    background: white;
+}
+
+.one {
+    flex-basis: 200px;
+    background-color: white;
+    margin-left: -38px;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.formiddleleft {
+    flex-basis: 50px;
+    background-color: white;
+    border-right: none;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    border-left: var(--border-outliner);
+    border-top: none;
+    border-bottom: none;
+    margin-left: -30px;
+}
+
+.two {
+    flex-basis: 200px;
+    background-color: white;
+    margin-left: -30px;
+    overflow: hidden;
+}
+
+.formiddleright {
+    flex-basis: 50px;
+    background-color: white;
+    border-left: var(--border-outliner);
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    border-right: none;
+    margin-left: -40px;
+}
+
+.three {
+    flex-basis: 200px;
+    background-color: white;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+.right {
+    flex-basis: 150px;
+    border-radius: 40%;
+    border: var(--border-bottom);
+    border-left: var(--border-left-right);
+    background: gold;
+    margin-right: 10px;
+    display: inherit;
+    margin-left: -85px;
+}
+
+img {
+    display: block;
+}
+
+.coin,
+.bread,
+.grape,
+.juice,
+.onion,
+.rose {
+    margin-top: 20px;
+    width: 120px;
+    height: 180px;
+    background-color: white;
+    margin-left: 15px;
+    background: none;
+    scroll-behavior: smooth;
+}
+
+.coin2,
+.grape2,
+.bread2,
+.rose2,
+.onion2,
+.juice2 {
+    margin-top: 30px;
+    width: 120px;
+    height: 170px;
+    background-color: white;
+    margin-left: 10px;
+    transition-delay: 2s;
+    scroll-behavior: smooth;
+}
+
+.coin3,
+.grape3,
+.bread3,
+.rose3,
+.onion3,
+.juice3 {
+    margin-top: 30px;
+    width: 120px;
+    height: 170px;
+    background-color: white;
+    background: none;
+}
+
+.swing {
+    width: 60px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 100px;
+}

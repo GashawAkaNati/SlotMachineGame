@@ -1,0 +1,1 @@
+This is a simple slot machine game. follow the instructions of the Emoji .
